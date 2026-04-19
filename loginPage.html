@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cauvery Bhawan - NIT Kurukshetra</title>
+
+    <style>
+        
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color:skyblue;
+
+            
+        }
+
+        .form {
+            background: white;
+            margin: 30px auto;
+            width: 80%;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top:5px;
+            background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),url("hostelimage.jpeg") ;
+            background-size: cover;
+            backdrop-filter: blur(10px);
+        }
+         .form h2 {
+            text-align: left;
+            margin-bottom: 20px;
+            color:black;
+             border-bottom:4px solid #0a5ed7;
+        }
+        label{
+            display:block;
+            margin-top:10px;
+            font-weight:bold;
+        }
+        input{
+            width:100%;
+            padding:8px;
+            margin-top:5px;
+             border: 1px solid #ccc;
+             border-radius: 5px;
+             box-sizing: border-box;
+        }
+        .button{
+             background:#0a5ed7;
+            color:white;
+            padding:10px 20px;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:20px;
+            margin-top:5px;
+        }
+     
+         footer{
+            background:#0a5ed7;
+            color:white;
+            text-align:center;
+            padding:12px;
+            margin-top:40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <h2>Leave Form</h2>
+        <form  >
+        <label for="FirstName">UserName :</label>
+        <input id="FirstName" name="FirstName" type="text" placeholder="Enter your full name"><br>
+        <label for="roll">Roll Number:</label>
+        <input type="text" id="roll" name="rollno" placeholder="Enter your roll number"><br>
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" ><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91-XXXXX-XXXXX" ><br>
+        <label for="phone">password:</label>
+        <input type="password" id="password" name="password" minlength="4" siz="4"><br>
+
+        <label for="leaveStart">Leave Start Date</label><min>2026-02-04</min>
+        <input id="leaveStart" name="leaveStart" type="date" placeholder="Enter date">><br>
+        <label for="leaveEnd">Leave End Date</label><max>2026-07-15</max>
+        <input id="leaveEnd" name="leaveEnd" type="date" placeholder="Enter date"><br>
+        <label for="leave">Reason For Medical Leave</label>
+        <textarea rows="5" cols="40" id="leave">enter reason</textarea><br>
+        <p style="font-style: bold;border-bottom:4px solid green;font-size: 20px;">Reason For Leave</p>
+        <input   type="radio" name="End" value="Medical" id="Medical"><label for="Medical">Medical</label>
+        <input  type="radio" name="End" value="Urgent" id="Urgent"><label for="Urgent">Urgentwork</label>
+        <input  type="radio" name="End" value="Marriage" id="Marriage"><label for="Marriage">Marriage</label>
+        <input  type="radio" name="End" id="other" value="other" ><label for="other">other</label>
+    <textarea class="otherText" placeholder="Enter other reason"></textarea>
+    <p style="font-style:bold ;border-bottom:4px solid green;font-size: 20px">Leave Location:</p>
+        <input   type="checkbox" name="option" value="Home" id="Home"><label for="Home">Chandigarh</label>
+        <input  type="checkbox" name="option" value="Trip" id=""><label for="Trip">Himachalprdash</label>
+        <input  type="checkbox" name="option" value="NightOut" id=""><label for="NightOut">Rishikesh/Haridwar</label>
+        <input  type="checkbox" name="option" id="party" value="party" id="party"><label for="Amritsar">Party</label>
+        <input  type="checkbox" name="option" id="otherbox" value="otherbox" ><label for="otherbox">other</label>
+    <textarea class="box" placeholder="Enter other reason"></textarea></br>
+      <button>
+        <input type="submit" value="submit">
+     </button>
+        </form>
+    </div>
+
+ </body>
+ </html>
