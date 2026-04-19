@@ -1,0 +1,107 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(skyblue,white);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.log{
+    background:white;
+    box-shadow:0 0 10px pink;
+    text-align:center;
+    padding:50px;
+    border:5px ridge;
+}
+
+.log h2{
+    margin-bottom:20px;
+    border-bottom:4px solid #0a5ed7;
+}
+
+.error{
+    color:red;
+    margin-bottom:10px;
+}
+
+.retry-btn{
+    background:#ff4d4d;
+    color:white;
+    border:none;
+    padding:5px 10px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="log">
+<h2>Login Page</h2>
+
+<form id="loginForm" action="loginPage.html">
+    
+<label>Username :</label>
+<input type="text" required><br><br>
+
+<label>Password :</label>
+<input type="password" required><br><br>
+
+<div class="captcha-box">
+    <span id="num1"></span> + <span id="num2"></span> = ?
+</div>
+
+<input type="number" id="captchaInput" placeholder="Enter Captcha"><br><br>
+
+<div class="error" id="errorMsg"></div>
+
+<button type="submit">Login</button>
+<button type="button" class="retry-btn" onclick="generateCaptcha()">Retry</button>
+
+</form>
+
+</div>
+
+<script>
+
+let correctSum;
+
+function generateCaptcha(){
+    let x = Math.floor(Math.random()*10) + 1;
+    let y = Math.floor(Math.random()*10) + 1;
+
+    correctSum = x + y;
+
+    document.getElementById("num1").textContent = x;
+    document.getElementById("num2").textContent = y;
+    document.getElementById("errorMsg").textContent = "";
+    document.getElementById("captchaInput").value = "";
+}
+
+document.getElementById("loginForm").addEventListener("submit", function(e){
+
+    let userAnswer = document.getElementById("captchaInput").value;
+
+    if(userAnswer === "" || parseInt(userAnswer) !== correctSum){
+        e.preventDefault();
+        document.getElementById("errorMsg").textContent = 
+        "Incorrect captcha! Please try again.";
+        generateCaptcha(); // new captcha generate
+    }
+});
+
+generateCaptcha();
+
+</script>
+
+</body>
+</html>
