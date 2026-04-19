@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cauvery Bhawan - NIT Kurukshetra</title>
+
+    <style>
+        .head{
+            background:#0b397a;
+            color:white;
+            padding:20px;
+            gap:20px;
+            text-align: center;
+        }
+        .head h1,h3{
+            margin: 5px;
+            
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color:#e8f5e9 ;
+            
+        }
+
+    
+        .logos {
+            height: 250px; 
+            background-image: url("hostelimage.jpeg");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color:black;
+        }
+
+       
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1;
+        }
+
+        .logo img {
+            height:auto;
+            width:120px;
+        }
+
+        .facilities,.form,.fram {
+            background: white;
+            margin: 30px auto;
+            width: 80%;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top:5px;
+        }
+
+        .facilities h2 {
+            text-align: left;
+            margin-bottom: 20px;
+             border-bottom:4px solid #0a5ed7;
+            color:black
+            
+        }
+
+        .facilities ul {
+            list-style-type: square;
+            font-size: 18px;
+            line-height: 1.8;
+            padding-left: 40px;
+            color:black;
+        }
+                .det,.pic,.drag {
+            background: white;
+            margin: 30px auto;
+            width: 80%;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            font-size: 20px;
+        }
+        .det h2 {
+            text-align: left;
+            margin-bottom: 20px;
+            color:black;
+             border-bottom:4px solid #0a5ed7;
+        }
+        .drag h2 {
+            text-align: left;
+            margin-bottom: 20px;
+            color:black;
+             border-bottom:4px solid #0a5ed7;
+        }
+        .pic h2 {
+            text-align: left;
+            margin-bottom: 20px;
+            color:black;
+             border-bottom:4px solid #0a5ed7;
+        }
+        .fram h2 {
+            text-align: left;
+            margin-bottom: 20px;
+            color:black;
+             border-bottom:4px solid #0a5ed7;
+        }
+        .form h2 {
+            text-align: left;
+            margin-bottom: 20px;
+            color:black;
+             border-bottom:4px solid #0a5ed7;
+        }
+        .drag details {
+            list-style-type: square;
+            font-size: 25px;
+            line-height:8px;
+            padding-left: 30px;
+            color: #555;
+        }
+        #room{
+            list-style-type: square;
+            font-size: 20px;
+            line-height:3px;
+            padding-left: 20px;
+            color: #555;
+        }
+        label{
+            display:block;
+            margin-top:10px;
+            font-weight:bold;
+        }
+        input{
+            width:100%;
+            padding:8px;
+            margin-top:5px;
+             border: 1px solid #ccc;
+             border-radius: 5px;
+             box-sizing: border-box;
+        }
+        .button{
+             background:#0a5ed7;
+            color:white;
+            padding:10px 20px;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:20px;
+            margin-top:5px;
+        }
+        .head button{
+             background:white;
+            color:blue;
+            padding:10px 20px;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:20px;
+            margin-top:5px;
+            display:flex;
+            justify-content:right;
+        }
+        .otherText{
+            display:none;
+        }
+         #other:checked+label +.otherText{
+            display:block;
+         }
+         .box{
+            display:none;
+        }
+         #otherbox:checked+label +box{
+            display:block;
+         }
+         footer{
+            background:#0a5ed7;
+            color:white;
+            text-align:center;
+            padding:12px;
+            margin-top:40px;
+        }
+    </style>
+</head>
+
+<body>
+        <header class="logos"></header>
+        <div class="logo">
+            <marquee direction="right" behavior="alternate">
+            <img src="https://nitkkr.campusmall.in/media/logo/stores/30/NIT-Kurukshetra_1.png" alt="NIT Kurukshetra Logo" style="float:right;">
+            </marquee>
+        </div>
+      
+      <header class="hero"></header>
+        <div class="head" >
+            <h1>Cauvery Bhawan</h1><br>
+            <h3>Girls Hostel</h3>
+            <form action="sighn.html">
+            <button   type="submit" value="submit">Sign-up
+     </button>
+           </form> 
+            
+        </div>
+    </header>
+    </div>
+    <div class="facilities">
+        <h2>Facilities Available</h2>
+        <ul>
+            <li>24×7 Water Supply</li>
+            <li>Wi-Fi Connectivity</li>
+            <li>Mess with Hygienic Food</li>
+            <li>Common room</li>
+
+            <li>24×7 Security</li>
+            <li>Laundry Facility</li>
+            <li>Power Backup</li>
+            <li>Medical Assistance</li>
+        </ul>
+    </div>
+    <div class="det">`            
+        <h2>Mess Details</h2>
+        <details>
+            <summary>Mess</summary>
+            <p> Do't wast the food</p>
+        </details>
+        </div>
+        <div class="drag">
+            <h2>Room Capacity</h2>
+        <label for="room">Room Capacity:</label>
+        <select id="room">
+            <option>Single Seater</option>
+             <option>Double Seater</option>
+              <option>Triple Seater</option>
+        </select>
+        </div>
+    </div>
+    <div class="pic">
+        <h2>click on any One</h2>
+      <img src="https://www.shutterstock.com/shutterstock/photos/2344052209/display_1500/stock-vector-set-of-hostel-building-reception-rack-and-room-interior-flat-style-vector-illustration-isolated-2344052209.jpg" 
+     usemap="#hostelmap" 
+     style="width:100%; height:auto;" alt="Hostel Layout">
+
+<map name="hostelmap">
+  <area shape="polygon" coords="0,0,500,1500" href="https://www.bing.com/search?q=hostel+building+images&form=ANNTH1&refig=6972577a38fc4f05800504bafcf30f40&pc=EDGEDB&adppc=EDGEDBB&pq=hostel+building&pqlth=15&assgl=22&sgcn=hostel+building+images&qs=LT&sgtpv=LT&smvpcn=0&swbcn=10&sctcn=0&sc=10-15&sp=2&ghc=0&cvid=6972577a38fc4f05800504bafcf30f40&clckatsg=1&hsmssg=0" alt="Hostel Building">
+  <area shape="rect" coords="500,0,1000,1500" href="https://www.bing.com/search?q=%20hostel%20mess%20images&qs=n&form=QBRE&sp=-1&lq=0&pq=%20hostel%20mess%20images&sc=4-19&sk=&cvid=C0841BD5A6BB48A09231CE881F29FB0C" alt="Mess">
+  <area shape="rect" coords="1000,0,1500,1500" href="https://www.bing.com/search?q=hostel%20reception%20area%20image&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=hostel%20reception%20area%20image&sc=12-27&sk=&cvid=E6E55FD6428E4B5A8671F0DA936A3CDA" alt="Entry Gate">
+</map>
+        
+    </div>
+    <div class="fram">
+    <h2>Google Map:</h2>
+    <div style="display:flex; justify-content:center; margin-bottom:30px;">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3479.916601920858!2d76.81952337544107!3d29.946796127416895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e6a39b7dd88f9%3A0x257258be13a14b76!2sNIT%20Kurukshetra!5e0!3m2!1sen!2sin!4v1706481648174!5m2!1sen!2sin" 
+     style=" width:100%;
+      height:300;" 
+      style="border:0; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.3);" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    </div>
+  </div>
+    <div class="form">
+        <h2>Hostel Registration Form</h2>
+        <form action="loginPage.html" >
+        <label for="FirstName">First Name :</label>
+        <input id="FirstName" name="FirstName" type="text" placeholder="Enter your full name"><br>
+        <label for="roll">Roll Number:</label>
+        <input type="text" id="roll" name="rollno" placeholder="Enter your roll number"><br>
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" ><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91XXXXXXXXXX" >
+        <label for="leaveStart">Leave Start Date</label>
+        <input id="leaveStart" name="leaveStart" type="date" placeholder="Enter date"><br>
+        <label for="leaveEnd">Leave End Date</label>
+        <input id="leaveEnd" name="leaveEnd" type="date" placeholder="Enter date"><br>
+        <label for="leave">Reason For Medical Leave</label>
+        <textarea rows="5" cols="40" id="leave">enter reason</textarea><br>
+        <p style="font-style: bold;border-bottom:4px solid green;font-size: 20px;">Reason For Leave</p>
+        <input   type="radio" name="End" value="Medical" id="Medical"><label for="Medical">Medical</label>
+        <input  type="radio" name="End" value="Urgent" id="Urgent"><label for="Urgent">Urgentwork</label>
+        <input  type="radio" name="End" value="Marriage" id="Marriage"><label for="Marriage">Marriage</label>
+        <input  type="radio" name="End" id="other" value="other" ><label for="other">other</label>
+    <textarea class="otherText" placeholder="Enter other reason"></textarea>
+    <p style="font-style:bold ;border-bottom:4px solid green;font-size: 20px">Leave Location:</p>
+        <input   type="checkbox" name="option" value="Home" id="Home"><label for="Home">Chandigarh</label>
+        <input  type="checkbox" name="option" value="Trip" id=""><label for="Trip">Himachalprdash</label>
+        <input  type="checkbox" name="option" value="NightOut" id=""><label for="NightOut">Rishikesh/Haridwar</label>
+        <input  type="checkbox" name="option" id="party" value="party" id="party"><label for="Amritsar">Party</label>
+        <input  type="checkbox" name="option" id="otherbox" value="otherbox" ><label for="otherbox">other</label>
+    <textarea class="box" placeholder="Enter other reason"></textarea></br>
+      
+        
+            <button  type="submit" value="submit">Submit
+     </button>
+        </form>
+    </div>
+    
+     
+   <footer>
+        © 2026 Cauvery Bhawan | NIT Kurukshetra
+    </footer>
+
+</body>
+</html>
+
